@@ -12,3 +12,4 @@ INSERT INTO equipos (id, nombre) VALUES('1', 'Proyecto P1');
 INSERT INTO equipo_usuario (fk_equipo, fk_usuario) VALUES('1', '1');
 INSERT INTO equipo_usuario (fk_equipo, fk_usuario) VALUES('1', '2');
 INSERT INTO equipos (id, nombre) VALUES('2', 'Proyecto P0');
+INSERT INTO usuarios (id, email, nombre, password, fecha_nacimiento, admin, bloqueado) VALUES('4', 'unusuario@ua', 'Señor Usuario', '123', '1992-12-25', false, false);
