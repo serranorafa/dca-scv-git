@@ -29,14 +29,14 @@
                 <tr th:each="tarea: ${tareas}">
                     <td th:text="${tarea.id}"></td>
                     <td th:text="${tarea.titulo}"></td>
-                    <td><a class="btn btn-primary btn-xs" th:href="@{/tareas/{id}/editar(id=${tarea.id})}"/>editar</a>
+                    <td><a class="btn btn-primary btn-xs" th:href="@{/tareas/{id}/editar(id=${tarea.id})}"/>Editar</a>
                         <button class="btn btn-danger btn-xs" onmouseover="" style="cursor: pointer;"
-                           th:onclick="'del(\'/tareas/' + ${tarea.id} + '\')'">borrar</button>
+                           th:onclick="'del(\'/tareas/' + ${tarea.id} + '\')'">Borrar</button>
                     </td>
                 </tr>
                 </tbody>
             </table>
-            <p><a class="btn btn-primary" th:href="@{/usuarios/{id}/tareas/nueva(id=${usuario.id})}"> Nueva tarea</a>
+            <p><a class="btn btn-primary" th:href="@{/usuarios/{id}/tareas/nueva(id=${usuario.id})}">+ Nueva tarea</a>
             <a class="btn btn-link" href="/logout">Salir</a></p>
         </div>
     </div>
