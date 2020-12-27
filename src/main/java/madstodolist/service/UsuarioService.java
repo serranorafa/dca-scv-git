@@ -36,7 +36,8 @@ public class UsuarioService {
         } else if (!usuario.get().getPassword().equals(password)) {
             return LoginStatus.ERROR_PASSWORD;
         } else {
-            return LoginStatus.LOGIN_OK;
+            //return LoginStatus.LOGIN_OK;
+            return LoginStatus.USER_NOT_FOUND;
         }
     }
 
