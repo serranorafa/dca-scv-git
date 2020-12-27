@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: head (titulo='Acerca de')"></head>
+
+<body>
+
+<div th:replace="fragments :: barra-menu"></div>
+
+<div class="container-fluid">
+    <div class="container-fluid">
+        <h1>ToDo List</h1>
+        <ul>
+            <li>Desarrollada por Rafael Serrano Aracil</li>
+            <li>Versión 1.2.0</li>
+            <li>Fecha de release: 7/11/2020</li>
+        </ul>
+    </div>
+
+</div>
+
+<div th:replace="fragments::javascript"/>
+
+</body>
+</html>
